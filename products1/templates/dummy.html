@@ -1,0 +1,38 @@
+
+
+                    <table>
+
+
+                                <tr>
+                                     {% for product in products %}
+                                         {% if product.id <= 3 %}
+
+                                        <td>
+                                            <img src="{{product.image}}" class="card-img-top" HEIGHT="200px" width="200px">
+                                             <h2 class="card-title">{{product.Product_name}}</h2>
+                                        </td>
+                                         {% endif %}
+                                     {% endfor %}
+                                    </tr>
+                                 <tr>
+                                    {% for product in products %}
+                                         {% if product.id > 3 and product.id <= 6 %}
+
+                                        <td>
+                                            <img src="{{product.image}}" class="card-img-top" HEIGHT="200px" width="200px">
+                                             <h2 class="card-title">{{product.Product_name}}</h2>
+                                        </td>
+
+                                         {% endif %}
+                                     {% endfor %}
+                                </tr>
+
+
+
+
+
+                        </table>
+
+
+
+
